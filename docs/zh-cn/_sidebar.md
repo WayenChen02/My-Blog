@@ -1,6 +1,36 @@
-- [首页](/zh-cn/)
-- [git指令](zh-cn/git/gitCommand.md)
-- 微服务/分布式相关
-  - [微服务权限设计问题](zh-cn/microservice/MicroservicePermissionDesign.md)
-- 订单相关
-  - [订单超时关单](zh-cn/order/OrderTimeoutClose.md)
+
+- 学习首页
+  - [首页](/zh-cn/)
+  - [导航](/zh-cn/guide.md)
+- 开发工具
+  - [Git 指令](/zh-cn/git/gitCommand.md)
+- 微服务 / 分布式
+  - [微服务权限设计](/zh-cn/microservice/MicroservicePermissionDesign.md)
+- 业务设计
+  - [订单超时关单](/zh-cn/order/OrderTimeoutClose.md)
+- RAG全学习链路
+  - [学习总览](/zh-cn/RAG全学习链路/README.md)
+  - 01-系统总览
+    - [01-RAG解决什么问题](/zh-cn/RAG全学习链路/01-系统总览/01-RAG解决什么问题.md)
+    - [02-WeKnora架构与核心数据对象](/zh-cn/RAG全学习链路/01-系统总览/02-WeKnora架构与核心数据对象.md)
+  - 02-文档入库链路
+    - [03-数据接入与异步任务](/zh-cn/RAG全学习链路/02-文档入库链路/03-数据接入与异步任务.md)
+    - [04-文档解析与内容清洗](/zh-cn/RAG全学习链路/02-文档入库链路/04-文档解析与内容清洗.md)
+    - [05-分块与父子分块](/zh-cn/RAG全学习链路/02-文档入库链路/05-分块与父子分块.md)
+    - [06-Embedding与索引构建](/zh-cn/RAG全学习链路/02-文档入库链路/06-Embedding与索引构建.md)
+    - [07-知识更新删除与失败恢复](/zh-cn/RAG全学习链路/02-文档入库链路/07-知识更新删除与失败恢复.md)
+  - 03-检索问答链路
+    - [08-会话历史与查询理解](/zh-cn/RAG全学习链路/03-检索问答链路/08-会话历史与查询理解.md)
+    - [09-向量检索关键词检索与融合](/zh-cn/RAG全学习链路/03-检索问答链路/09-向量检索关键词检索与融合.md)
+    - [10-重排去重与上下文扩展](/zh-cn/RAG全学习链路/03-检索问答链路/10-重排去重与上下文扩展.md)
+    - [11-Prompt组装回答生成与引用](/zh-cn/RAG全学习链路/03-检索问答链路/11-Prompt组装回答生成与引用.md)
+    - [12-流式输出取消与消息持久化](/zh-cn/RAG全学习链路/03-检索问答链路/12-流式输出取消与消息持久化.md)
+  - 04-评估与工程实践
+    - [13-评测集指标与调参实验](/zh-cn/RAG全学习链路/04-评估与工程实践/13-评测集指标与调参实验.md)
+    - [14-全链路排障性能与权限](/zh-cn/RAG全学习链路/04-评估与工程实践/14-全链路排障性能与权限.md)
+    - [15-端到端案例复盘](/zh-cn/RAG全学习链路/04-评估与工程实践/15-端到端案例复盘.md)
+  - 05-进阶专题
+    - [图片OCR与多模态RAG](/zh-cn/RAG全学习链路/05-进阶专题/图片OCR与多模态RAG.md)
+    - [Agent工具调用与长期记忆](/zh-cn/RAG全学习链路/05-进阶专题/Agent工具调用与长期记忆.md)
+    - [FAQ与问题生成](/zh-cn/RAG全学习链路/05-进阶专题/FAQ与问题生成.md)
+    - [GraphRAG与Wiki](/zh-cn/RAG全学习链路/05-进阶专题/GraphRAG与Wiki.md)

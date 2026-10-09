@@ -1,0 +1,9 @@
+Use case: stylized-concept
+Asset type: wide 16:9 homepage cover background for WayenChen's personal Java-learning blog, high-resolution raster illustration.
+Primary request: A refined, welcoming developer workspace illustration that subtly conveys Java programming, backend services, databases, and continuous learning.
+Style/medium: contemporary editorial illustration with gentle dimensional depth, precise clean shapes, soft paper texture, tasteful restrained detail, professional personal-blog visual.
+Scene and subject: small laptop with abstract code lines, an open learning notebook, a warm coffee cup, and a few neatly connected server and database forms, integrated as one coherent workspace along the bottom and outer sides.
+Composition: panoramic landscape, airy balanced framing, central 60 percent of width and central upper 65 percent of height deliberately open and visually quiet for the website's existing centered title, subtitle, and buttons. Keep distinctive objects low along bottom corners; do not place objects or graphic lines behind the central text area. Make cropping to a full viewport background practical.
+Color palette: soft pale mint green and warm ivory background, muted sage and deeper forest green accents, tiny warm amber highlights. Background light enough for dark gray website text to remain clearly readable.
+Lighting and mood: soft daylight, calm, curious, optimistic, thoughtful learning atmosphere.
+Constraints: output only the background artwork, full bleed, opaque background. No lettering, no title, no words, no watermarks, no logos, no UI, no border. Do not draw screenshots or readable code. Avoid intense neon, clutter, overly childish cartoon style, high-contrast busy central details.

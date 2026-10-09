@@ -1,0 +1,245 @@
+/* 中文博客：背景、阅读卡片与侧边栏。图片相对本样式文件解析。 */
+body[data-page^="zh-cn/"] {
+  --theme-color: #378765;
+  --content-max-width: 900px;
+  --sidebar-width: 296px;
+  --sidebar-bg: rgba(248, 252, 248, 0.94);
+  --sidebar-border-color: rgba(68, 105, 81, 0.12);
+  --sidebar-link-color: #496356;
+  --sidebar-link-color-active: #226345;
+  --sidebar-name-color: #284b3a;
+  --sidebar-name-font-size: 20px;
+  --sidebar-name-margin: 30px 20px 24px;
+  --sidebar-link-spacing: 5px;
+  --sidebar-toggle-bg: #dfebe2;
+  --sidebar-toggle-color: #427055;
+  --codeblock-bg: #f2f6f3;
+  min-height: 100vh;
+  background: linear-gradient(rgba(242, 247, 240, 0.72), rgba(242, 247, 240, 0.72)),
+    url('./blog-cover.png') center / cover fixed no-repeat;
+}
+
+body[data-page^="zh-cn/"] .markdown-section {
+  margin-block: 28px 48px;
+  padding: 32px 40px;
+  border: 1px solid rgba(68, 105, 81, 0.12);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 14px 44px rgba(37, 66, 46, 0.07);
+  line-height: 1.85;
+}
+
+body[data-page^="zh-cn/"] .markdown-section :is(h1, h2, h3) {
+  color: #284b3a;
+}
+
+body[data-page^="zh-cn/"] .markdown-section pre {
+  border: 1px solid #e0e9e2;
+  border-radius: 12px;
+}
+
+body[data-page^="zh-cn/"] .sidebar {
+  backdrop-filter: blur(14px);
+}
+
+body[data-page^="zh-cn/"] .sidebar .app-name {
+  padding-bottom: 22px;
+  border-bottom: 1px solid #dfe9e0;
+  line-height: 1.5;
+}
+
+body[data-page^="zh-cn/"] .sidebar-nav > ul {
+  margin-inline: 12px;
+}
+
+body[data-page^="zh-cn/"] .sidebar-nav > ul > li {
+  margin-left: 0;
+}
+
+body[data-page^="zh-cn/"] .sidebar-nav li.group {
+  margin-block: 22px 0;
+  padding-inline: 8px;
+  color: #7a8b80;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+body[data-page^="zh-cn/"] .sidebar-nav li.group > ul {
+  margin-top: 8px;
+  padding-left: 0;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+body[data-page^="zh-cn/"] .sidebar-nav a.page-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 11px;
+  background: transparent;
+  color: #496356;
+  line-height: 1.6;
+  white-space: normal;
+  text-decoration: none;
+  transition: background-color 160ms, border-color 160ms, color 160ms;
+}
+
+body[data-page^="zh-cn/"] .sidebar-nav a.page-link::before {
+  content: '';
+  flex: 0 0 20px;
+  font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;
+  font-size: 17px;
+  line-height: 1;
+  text-align: center;
+}
+
+body[data-page^="zh-cn/"] .sidebar-nav a.page-link::after {
+  display: none;
+}
+
+body[data-page^="zh-cn/"] .sidebar-nav a.page-link:hover {
+  background: #eaf2e9;
+  color: #226345;
+}
+
+body[data-page^="zh-cn/"] .sidebar-nav li[aria-current="page"] > a.page-link {
+  border-color: #c9dfcd;
+  background: #e1efdf;
+  color: #226345;
+  font-weight: 600;
+}
+
+/* 仅在当前文章的链接前显示表情，不给小节目录重复添加。 */
+body[data-page^="zh-cn/"] .sidebar-nav li[aria-current="page"] > a.page-link::before {
+  content: '📖';
+}
+
+body[data-page^="zh-cn/"] .sidebar-nav .app-sub-sidebar {
+  margin: 8px 0 14px 23px;
+  padding-left: 12px;
+  border-left: 1px solid #d5e3d7;
+}
+
+body[data-page^="zh-cn/"] .sidebar-nav .app-sub-sidebar li::before {
+  display: none;
+}
+
+body[data-page^="zh-cn/"] .sidebar-nav a.section-link {
+  padding: 5px 8px;
+  border-radius: 6px;
+  color: #75877b;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.7;
+  text-decoration: none;
+}
+
+body[data-page^="zh-cn/"] .sidebar-nav a.section-link:hover,
+body[data-page^="zh-cn/"] .sidebar-nav li.active > a.section-link {
+  background: #edf3ea;
+  color: #226345;
+}
+
+body[data-page^="zh-cn/"] .sidebar-nav a:focus-visible {
+  outline: 2px solid #378765;
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  body[data-page^="zh-cn/"] {
+    --sidebar-width: min(296px, calc(100vw - 56px));
+    --sidebar-bg: rgba(248, 252, 248, 0.98);
+    --content-margin-inline: 18px;
+  }
+
+  body[data-page^="zh-cn/"] .markdown-section {
+    margin-block: 12px 24px;
+    padding: 24px 20px;
+    border-radius: 14px;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body[data-page^="zh-cn/"] .sidebar-nav a.page-link {
+    transition: none;
+  }
+}
+
+/* RAG 学习目录：模块标题展开，文章链接保留当前页标记。 */
+body[data-page^="zh-cn/"] .sidebar-nav li.rag-module-group {
+  margin-block: 6px;
+  padding-inline: 0;
+  letter-spacing: normal;
+}
+
+body[data-page^="zh-cn/"] .rag-module > summary {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 12px;
+  border-radius: 9px;
+  color: #496356;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.6;
+  list-style: none;
+  cursor: pointer;
+  transition: background-color 160ms;
+}
+
+body[data-page^="zh-cn/"] .rag-module > summary::-webkit-details-marker {
+  display: none;
+}
+
+body[data-page^="zh-cn/"] .rag-module > summary::before {
+  content: '›';
+  flex: 0 0 12px;
+  color: #6b8b76;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+}
+
+body[data-page^="zh-cn/"] .rag-module[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+body[data-page^="zh-cn/"] .rag-module > summary:hover,
+body[data-page^="zh-cn/"] .rag-module[open] > summary {
+  background: #eaf2e9;
+  color: #226345;
+}
+
+body[data-page^="zh-cn/"] .rag-module > summary:focus-visible {
+  outline: 2px solid #378765;
+  outline-offset: 2px;
+}
+
+body[data-page^="zh-cn/"] .rag-module > ul {
+  margin: 6px 0 12px 14px;
+  padding-left: 6px;
+  border-left: 1px solid #d5e3d7;
+}
+
+body[data-page^="zh-cn/"] .rag-module a.page-link {
+  gap: 6px;
+  padding: 8px 9px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+body[data-page^="zh-cn/"] .rag-module a.page-link::before {
+  flex-basis: 18px;
+  font-size: 16px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body[data-page^="zh-cn/"] .rag-module > summary {
+    transition: none;
+  }
+}
