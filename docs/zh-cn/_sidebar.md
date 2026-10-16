@@ -8,6 +8,15 @@
   - [微服务权限设计](/zh-cn/microservice/MicroservicePermissionDesign.md)
 - 业务设计
   - [订单超时关单](/zh-cn/order/OrderTimeoutClose.md)
+  - [订单ID生成服务的设计思路](/zh-cn/order/OrderIdGeneration.md)
+  - [秒杀系统设计](/zh-cn/order/SeckillSystemDesign.md)
+- Kafka
+  - [Kafka简介](/zh-cn/kafka/KafkaIntroduction.md)
+- JVM
+  - [JVM简介](/zh-cn/jvm/JVMIntroduction.md)
+  - [垃圾收集器分类与核心特性](/zh-cn/jvm/GarbageCollector.md)
+  - [CMS垃圾收集器详解](/zh-cn/jvm/CMSCollector.md)
+  - [G1垃圾收集器详解](/zh-cn/jvm/G1Collector.md)
 - RAG全学习链路
   - [学习总览](/zh-cn/RAG全学习链路/README.md)
   - 01-系统总览

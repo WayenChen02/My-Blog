@@ -1,6 +1,6 @@
 # WayenChen's Blog
 
-> 这是我学习Java的博客
+> 这是我学习的博客
 
 
 [GitHub](https://github.com/aiheidabuzhao/My-Blog)
